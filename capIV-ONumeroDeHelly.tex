@@ -18,7 +18,7 @@ Falta algo para completar esta demonstração, mas não tenho tempo.}
 
 O estudo de grafos EPG foi introduzido por  Golumbic, Lypshteyn e Stern (2009) e consiste dos grafos de intersecção de conjuntos de caminhos sobre uma grade ortogonal, cujas intersecções são tomadas considerando as arestas dos caminhos. Se as intersecções dos caminhos consideram os vértices e não as arestas, a classe de grafos resultante é chamada de grafos VPG. Tal classe foi introduzida em 2011 \cite{asinowski2011string} e \cite{asinowski2012}. Nesse capítulo estudaremos dois parâmetros em ambas classes de grafos EPG e VPG. Os parâmetros que serão estudados são nomeadamente o número de Helly e o número de Helly forte.
 
-\section{Definições iniciais sobre número de Helly e número de Helly forte}
+\section{Discussão Inicial}
 
 Seja  $\cal {F}$ uma família de conjuntos de algum conjunto universal $U$, e $h$ um número inteiro tal que $h\geq 1$. Podemos dizer que $\cal{F}$ é $h$-{\it intersectante} quando todos  $h$ subconjuntos de $\cal {F}$ intersectam-se. Chamamos de {\it core} de $\cal {F}$ a intersecção de todos conjuntos de $\cal {F}$, e denotamos por $core(\cal F)$. 
 
@@ -41,30 +41,30 @@ Cada aresta possui uma direção associada na grade, a qual pode ser horizontal 
  Nesse capítulo, resolvemos completamente o problema de determinar ambos o número de Helly e o número de Helly forte, para ambos contextos de grafos $B_k$-EPG e $B_k$-VPG. Determinamos o número de Helly em grafos $B_k$-EPG e $B_k$-VPG, para cada valor de $k$.
 
 Para grafos EPG, o número de Helly de $B_0$-families é bem conhecido e é igual a 2, uma vez que  grafos $B_0$-EPG coincidem com grafos de intervalo. Também é simples concluir que o número de Helly forte dos grafos $B_0$-EPG é também igual a 2. Para $k = 1$,   provamos que ambos o número de Helly e número de Helly forte da classe de $B_1$-families são iguais a 3. Para a classe de  $B_2$-families, provamos que esses dois parâmetros são iguais a 4. Além disso o número de Helly e número de Helly forte para $B_3$-families é igual a 8, e finalmente esses parâmetros são ilimitados para  $k \geq 4$. 
+Quanto aos grafos VPG, é simples concluir que o número de Helly de grafos $B_0$-VPG é igual a 2, e provamos que grafos $B_1$-VPG possuem número de Helly  4, grafos $B_2$-VPG possuem número de Helly  6, grafos $B_3$-VPG possuem número de Helly 12, enquanto o número de Helly para grafos $B_4$-VPG novamente é ilimitado.
 
-As for VPG graphs, it is simple to conclude that the Helly number of $B_0$-VPG graphs equals 2, and we prove that $B_1$-VPG have Helly number 4, $B_2$-VPG graphs have Helly number 6, $B_3$-VPG  have Helly number 12, while the Helly number for $B_4$-VPG graphs is again unbounded. 
+Finalmente, o número de Helly forte é igual ao número de Helly nos grafos  $B_k$-EPG, para cada $k$. O mesmo vale para grafos $B_k$-VPG.
 
-Finally, the strong Helly number equals the Helly number of $B_k$-EPG graphs, for each $k$. Similarly, for $B_k$-VPG graphs. 
-
-As for existing results, 
-Golumbic, Lipshteyn  and Stern \cite{golumbic2009}  have already shown that the strong Helly number for $B_1$-EPG graphs equals 3, and for $B_1$-VPG graphs is equal to 4. employing a different proof technique. See  \cite{golumbic2019edge}, Theorem 11.13, below:
+Com relação aos resultados existentes, 
+Golumbic, Lipshteyn  e Stern \cite{golumbic2009} já tem mostrado que o número de Helly forte para grafos $B_1$-EPG é igual a 3, e para grafos $B_1$-VPG é igual a  4. Empregando técnicas de prova diferentes das utilizadas neste trabalho. Veja  \cite{golumbic2019edge}, Teorema 11.13, abaixo:
 \begin{theorem}\label{thm:golumbic2019edge}{\cite{golumbic2019edge}}
-Let $P$ be a collection of single bend paths on a grid. If every two paths in $P$ share at least one grid-edge, then $P$ has strong Helly number 3. Otherwise, $P$ has strong Helly number 4. 
+Seja $P$ uma coleção de caminhos de dobra simples sobre uma grade. Se cada 2 caminhos em  $P$ compartilham no mínimo uma aresta da grade, então $P$ possui número de Helly forte igual a 3. Caso contrário, $P$ possui número de Helly forte igual a 4. 
 \end{theorem}
-No other results concerning the strong Helly number, or no results for the Helly number of $B_k$-EPG graphs seem to have been reported in the literature. As for other classes, Golumbic and Jamison have determined the strong Helly number of the intersection of edge paths of a tree \cite{golumbic1985}. Finally, Asinowski, Cohen, Golumbic, Limouzy, Lipshteyn and Stern have reported that the strong Helly number of $B_0$-VPG graphs equals 2 \cite{asinowski2011string}.  
-Some related results are as follows. To decide  whether a given hypergraph is $k$-Helly can be done in polynomial time for fixed $k$, employing the characterization by Berge and Duchet \cite{bergeDuchet1975}. For arbitrary $k$, the problem is co-NP-complete \cite{dourado2009}. For the corresponding problems for strong $k$-Helly see \cite{dourado2008strong,dourado2009}.
+Nenhum outro resultado relacionado ao número de Helly forte, ou resultados relacionados ao número de Helly de grafos $B_k$-EPG foi notado ter sido reportado na literatura levantada. Quanto a outras classes, Golumbic e Jamison  tem determinado o número de Helly forte dos caminhos de intersecção de arestas sobre uma árvore em~\cite{golumbic1985}. Finalmente, Asinowski, Cohen, Golumbic, Limouzy, Lipshteyn e Stern tem reportado que o número de Helly forte de grafos $B_0$-VPG é igual a 2 \cite{asinowski2011string}.  
+Alguns resultados relacionados estão listados a seguir. Decidir se um dado hipergrafo é  $k$-Helly pode ser feito em tempo polinomial para um  $k$ fixo,  empregando a caracterização proposta por Berge e Duchet \cite{bergeDuchet1975}. Para algum $k$ arbitrário, o problema é  \cal{co-NP}-completo \cite{dourado2009}. Para ver mais problemas correspondendo à propriedade $k$-Helly forte e exemplos sugerimos a leitura de~\cite{dourado2008strong,dourado2009}.
 
-The paper is organized as follows. Section 2, contains some preliminary propositions  and further notation. Section 3 describes  the results for the Helly number of $B_k$-EPG graphs, while Section 4 contains the results of this parameter for $B_k$-VPG graphs. The strong Helly number is considered in Section 5. Final remarks form the last section.
+Este capítulo está organizado como listado a seguir. A seção~\ref{sec:preliminares4}, contém algumas proposições preliminares e notações adicionais utilizadas neste escrito. A seção~\ref{sec:Helly-number}  descreve os resultados para o número de Helly de grafos $B_k$-EPG, enquanto a seção~\ref{sec:helly-vpg} contém resultados desse parâmetro para grafos $B_k$-VPG. O número de Helly forte é considerado na seção~\ref{sec:helly-forte}. Considerações finais são efetuadas na seção~\ref{sec:finalRemarks4}.
 
-\section{Preliminaries}
-The following theorem characterizes $h$-Helly families of subsets.
+\section{Preliminares}\label{sec:preliminares4}
+
+O seguinte teorema caracteriza famílias de subconjuntos $h$-Helly.
 
 
 \begin{theorem}\label{thm:BD}(\cite{bergeDuchet1975}):
-A family $\cal{F}$  of subsets of the universal set $U$ is $h$-Helly if and only if for every subset $U' \subseteq U$, $|U'|= h+1$, the subfamily $\cal{F'}$ of $\cal{F}$, formed by the subsets containing at least $h$ of the $h+1$ elements of $U'$, has a non-empty core. 
+Uma família $\cal{F}$ de subconjuntos do conjunto universal  $U$ é $h$-Helly se e somente se para todo subconjunto   $U' \subseteq U$, $|U'|= h+1$,  a subfamília  $\cal{F'}$ de $\cal{F}$,  formada pelos subconjuntos contendo no mínimo  $h$ dos $h+1$ elementos de $U'$, tem um core não vazio. 
 \end{theorem}
 
-The next theorem is central to our results.
+O próximo teorema é central para os nossos resultados.
 
 \begin{theorem}\label{thm:minimal}
 Let ${\cal C}$ be a hereditary class of families ${\cal F}$ of subsets of the universal set $U$, whose Helly number $H({\cal C})$ equals $h$. Then there exists a family ${\cal F'} \in {\cal C}$ with exactly $h$ subsets, satisfying the following condition: 
@@ -293,7 +293,7 @@ Assume by contradiction that the Helly  number of  $B_3$-EPG paths is $h > 8$. I
 This completes the proof of Theorem \ref{thm:Helly-EPG}. 
 
 
-\section{Helly number of $B_k$-VPG Graphs}
+\section{Helly number of $B_k$-VPG Graphs}\label{sec:helly-vpg}
 
 In this section, we determine the Helly number of $B_k$-VPG graphs. We prove the following results.
 \begin{theorem}\label{thm:Bk-VPG}
@@ -416,7 +416,7 @@ $H(B_3$-VPG) $\leq  12$.
 
 From the lower and upper bounds described in the previous subsections, we obtain the results for the Helly numbers of $B_k$-VPG graphs, completing the proof of Theorem \ref{thm:Bk-VPG}.
 
-\section{Strong Helly Number} 
+\section{Strong Helly Number}\label{sec:helly-forte}
 
 In this section, first  we consider determining the strong Helly number of $B_k$-EPG graphs.
 
@@ -445,7 +445,7 @@ Recall that the strong Helly number is at least equal to the Helly number of a f
 
 
 
-\section{Concluding Remarks}
+\section{Concluding Remarks}\label{sec:finalRemarks4}
 We have determined the Helly number and strong Helly number of $B_k$-EPG graphs and $B_k$-VPG graphs, for $k \geq 0$. 
 
 Table \ref{tab:Helly-Strong-Helly} summarizes the results obtained.
