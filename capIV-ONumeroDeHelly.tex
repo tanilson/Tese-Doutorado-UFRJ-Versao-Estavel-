@@ -220,7 +220,7 @@ Observe que $\cal{F}$ é $(n-1)$-intersectante, enquanto $core({\cal{F}})=\empty
 % \end{tikzpicture}
 \includegraphics[width=12.5cm]{./img/b4epg.pdf}
 \end{center}
-\caption{$B_4$ has an unlimited número de Helly.}\label{fig:figurab4}
+\caption{$B_4$ possui número de Helly ilimitado.}\label{fig:figurab4}
 \end{figure}
 
 A seguir, nos preocupamos em encontrar limites superiores para grafos $H(B_k$-EPG).
@@ -229,46 +229,46 @@ A seguir, nos preocupamos em encontrar limites superiores para grafos $H(B_k$-EP
 
 De forma a obter um limite superior justo para o número de Helly, em termos do número de dobras, introduzimos abaixo mais algumas notações e lemas.
 
-Say that a set of edges of a grid is {\it co-linear} if all edges of the set belong to a same line of the grid, horizontal or vertical. The set of edges is called {\it parallel} if all its edges lie on parallel lines of the grid, but no two of them are co-linear.  
+Dizemos que um conjunto de arestas da grade é {\it co-linear} se todas arestas do conjunto pertencem a uma mesma linha da grade, horizontal ou vertical. O conjunto de arestas é chamado {\it paralelo} se todas as suas arestas estiverem sobre linhas paralelas da grade mas nenhuma delas for co-linear.
 
 
 \begin{lemma}
 \label{lemma:3colin}
-Let $\cal {F}$ be a minimal não-$(h-1)$-Helly família of caminhos on a grid  containing  three co-linear non representative edges. Then $\cal{F}$ must contain caminhos with at least four dobras.
+Seja $\cal {F}$ uma família minimal não-$(h-1)$-Helly de caminhos sobre uma grade contendo três arestas co-lineares não representativas. Então $\cal{F}$ deve conter caminhos com no mínimo quatro dobras.
 \end{lemma}
 
 \proof
-Let $u_i$ be the middle one of the three co-linear non representative edges. It corresponds to the  path $P_i$ of $\cal {F'}$, not containing $u_i$.
-Then $P_i$ must go through  the other two edges but it cannot include the middle edge. Therefore path $P_i$ must leave the common line of the grid, containing those three representatives edges, and return to that same line, thus requiring at least four dobras.
+Seja  $u_i$ a aresta do meio entre as três arestas  co-lineares não representativas. Ela corresponde ao caminho $P_i$ de $\cal {F'}$, não contendo $u_i$.
+ Então $P_i$ deve passar pelas outras duas arestas mas ele não deve incluir a aresta do meio. Portanto, o caminho $P_i$ deve sair da linha comum da grade, contendo essas três arestas representativas, e retornar à mesma linha, assim requerendo no mínimo quatro dobras.
 \qed
 
 
 \begin{lemma}
 \label{lemma:3par}
-Let $\cal{F}$ be a minimal não-$(h-1)$-Helly família of caminhos on a grid, containing three parallel edges, and having  número de Helly $H(\cal{F})$   $\geq 4$. Then $\cal{F}$ must contain caminhos with at least four dobras. 
+Seja $\cal{F}$ uma família minimal não-$(h-1)$-Helly de caminhos sobre uma grade, contendo três arestas paralelas, e tendo número de Helly $H(\cal{F})$   $\geq 4$. Então $\cal{F}$ deve conter caminhos com no mínimo quatro dobras. 
 \end{lemma}
 
 \proof
-Since $H(\cal{F}) $ $\geq 4$ and $\cal{F}$ is a minimal $(h-1)$-família, it follows that $\cal{F}$ must contain at least four caminhos, $P_1,P_2,P_3,P_4$. Without loss of generality, let $u_1,u_2,u_3$ be the não-representativos edges of the caminhos $P_1,P_2,P_3$ which are parallel. Then $P_4$ must go through all the three parallel não-representativo edges $u_1,u_2,u_3$, thus requiring at least four dobras. 
+Uma vez que $H(\cal{F}) $ $\geq 4$ e $\cal{F}$ é uma $(h-1)$-família minimal, segue que $\cal{F}$ deve conter no mínimo quatro caminhos, $P_1,P_2,P_3,P_4$. Sem perda de generalidade, sejam $u_1,u_2,u_3$ as arestas não-representativas dos caminhos $P_1,P_2,P_3$ que são paralelas. Então $P_4$ deve passar por todas três arestas paralelas não-representativas $u_1,u_2,u_3$, assim requerendo no mínimo quatro dobras. 
 \qed
 
 
 \begin{lemma} \label{lemma:Lwit}
-Let $\cal{F}$ be a minimal não-$(h-1)$-Helly família of caminhos on a grid with  número de Helly $H({\cal F}) \geq 4$. If ${\cal(F)}$ contains  three não-representativo edges that  lie on a common $B_1$-path $P_1$ of $\cal{F}$, then $\cal {F}$ must have some path with at least three dobras. \end{lemma}
+Seja $\cal{F}$ uma família minimal não-$(h-1)$-Helly de caminhos sobre uma grade com  número de Helly $H({\cal F}) \geq 4$. Se  ${\cal F}$ contem três arestas  não-representativas que se encontram sobre um mesmo $B_1$-caminho  $P_1$ de $\cal{F}$, então $\cal {F}$ deve possuir algum caminho com no mínimo três dobras. \end{lemma}
 
 \proof
-Since $\cal{F}$ is a minimal $(h-1)$-família having número de Helly $\geq 4$, it contains at least four caminhos. Without loss of generality, let  $u_1, u_2, u_3$ be the three não-representativo edges contained in $P_4$ and such that  $u_2$ lies between $u_1$ and $u_3$ in $P_4$. Then path $P_2$ must contain $u_1$ and $u_3$, but avoid $u_2$, thus requiring at least three dobras.  
+Visto que $\cal{F}$ é uma  $(h-1)$-família minimal tendo  número de Helly $\geq 4$, ela contem no mínimo quatro caminhos. Sem perda de generalidade, sejam  $u_1, u_2, u_3$ as três arestas não-representativas contidas em $P_4$ e tal que  $u_2$ encontra-se entre $u_1$ e $u_3$ em $P_4$. Então o caminho $P_2$ deve conter $u_1$ e $u_3$, mas evite $u_2$, assim requerendo no mínimo três dobras.  
 \qed
 
-The following are actual  tight upper bounds for the número de Hellys of edge $B_k$-caminhos, for $k = 1,2,3$.
+A seguir são apresentados os limites superiores justos para os números de Helly de $B_k$-caminhos em arestas, para $k = 1,2,3$.
 
 \begin{lema}\label{claim:upper-B1}
 $H(B_1$-$EPG) \leq 3.$
 \end{lema}
  
 \proof
-Assume by contradiction that the número de Helly of $B_1$-EPG caminhos is $h > 3$. In this case, consider a minimal não-$(h-1)$-Helly família of $\cal F$ of $B_1$-caminhos. Then $\cal F$ contains at least $h$ caminhos.  
-Any path $P_1 \in \cal{F}$ must contain $h-1$ não-representativo edges  corresponding to the $h-1$ distinct caminhos of $\cal F$ other than $P_1$. Since $h-1 \geq 3$, $P_1$ contains at least three distinct não-representativo edges $u_2, u_3, u_4 \in P_i$, with $u_3$ lying  between $u_2$ and $u_4$ in the path.   If $P_1$ has no dobras, $u_2,u_3,u_4$ are co-linear. By Lemma~\ref{lemma:3colin},  path $P_3 \in \cal{F}$ must contain at least four dobras. If $P_1$ has exactly one dobra, it follows from Lemma~\ref{lemma:Lwit} that $P_3$ has three dobras. In any situation, a contradiction arises, implying that $H({\cal F}) \leq 3$.
+Assuma por contradição que o número de Helly de famílias de caminhos $B_1$-EPG é $h > 3$. Nesse caso, considere uma família minimal não-$(h-1)$-Helly de $\cal F$ de $B_1$-caminhos. Então $\cal F$ contem no mínimo  $h$ caminhos.  
+Qualquer caminho $P_1 \in \cal{F}$ deve conter $h-1$ arestas não-representativas  correspondendo aos $h-1$ distintos caminhos de $\cal F$, diferentes de $P_i$. Uma vez que $h-1 \geq 3$, $P_1$  contem no mínimo três arestas  distintas não-representativas $u_2, u_3, u_4 \in P_1$, com $u_3$ encontrando-se entre $u_2$ e $u_4$ no caminho.  Se $P_1$ não possui dobras, $u_2,u_3,u_4$ são co-lineares. Pelo Lemma~\ref{lemma:3colin},  o caminho $P_3 \in \cal{F}$ deve conter no mínimo quatro dobras. Se $P_1$ possui exatamente uma dobra, segue do Lemma~\ref{lemma:Lwit} que $P_3$ possui três dobras. Em qualquer situação, uma contradição surge, implicando que $H({\cal F}) \leq 3$.
 \qed
 
 \begin{lema}\label{claim:upper-B2}
@@ -292,7 +292,7 @@ Assume by contradiction that the Helly  number of  $B_3$-EPG caminhos is $h > 8$
 This completes the proof of Theorem \ref{thm:Helly-EPG}. 
 
 
-\section{número de Helly of $B_k$-VPG Graphs}\label{sec:helly-vpg}
+\section{Número de Helly of $B_k$-VPG Graphs}\label{sec:helly-vpg}
 
 In this section, we determine the número de Helly of $B_k$-VPG graphs. We prove the following results.
 \begin{theorem}\label{thm:Bk-VPG}
@@ -415,7 +415,7 @@ $H(B_3$-VPG) $\leq  12$.
 
 From the lower and upper bounds described in the previous subsections, we obtain the results for the número de Hellys of $B_k$-VPG graphs, completing the proof of Theorem \ref{thm:Bk-VPG}.
 
-\section{Strong número de Helly}\label{sec:helly-forte}
+\section{Número de Helly forte}\label{sec:helly-forte}
 
 In this section, first  we consider determining the strong número de Helly of $B_k$-EPG graphs.
 
