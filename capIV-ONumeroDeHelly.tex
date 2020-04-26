@@ -267,8 +267,8 @@ $H(B_1$-$EPG) \leq 3.$
 \end{lema}
  
 \proof
-Assuma por contradição que o número de Helly de famílias de caminhos $B_1$-EPG é $h > 3$. Nesse caso, considere uma família minimal não-$(h-1)$-Helly de $\cal F$ de $B_1$-caminhos. Então $\cal F$ contem no mínimo  $h$ caminhos.  
-Qualquer caminho $P_1 \in \cal{F}$ deve conter $h-1$ arestas não-representativas  correspondendo aos $h-1$ distintos caminhos de $\cal F$, diferentes de $P_i$. Uma vez que $h-1 \geq 3$, $P_1$  contem no mínimo três arestas  distintas não-representativas $u_2, u_3, u_4 \in P_1$, com $u_3$ encontrando-se entre $u_2$ e $u_4$ no caminho.  Se $P_1$ não possui dobras, $u_2,u_3,u_4$ são co-lineares. Pelo Lemma~\ref{lemma:3colin},  o caminho $P_3 \in \cal{F}$ deve conter no mínimo quatro dobras. Se $P_1$ possui exatamente uma dobra, segue do Lemma~\ref{lemma:Lwit} que $P_3$ possui três dobras. Em qualquer situação, uma contradição surge, implicando que $H({\cal F}) \leq 3$.
+Assuma por contradição que o número de Helly de famílias de caminhos $B_1$-EPG é $h > 3$. Nesse caso, considere uma família minimal não-$(h-1)$-Helly $\cal F$ de caminhos $B_1$-EPG. Então $\cal F$ contem no mínimo  $h$ caminhos.  
+Qualquer caminho $P_1 \in \cal{F}$ deve conter $h-1$ arestas não-representativas  correspondendo aos $h-1$ distintos caminhos de $\cal F$, diferentes de $P_i$. Uma vez que $h-1 \geq 3$, $P_1$  contem no mínimo três arestas  distintas não-representativas $u_2, u_3, u_4 \in P_1$, com $u_3$ encontrando-se entre $u_2$ e $u_4$ no caminho.  Se $P_1$ não possui dobras, $u_2,u_3,u_4$ são co-lineares. Pelo Lema~\ref{lemma:3colin},  o caminho $P_3 \in \cal{F}$ deve conter no mínimo quatro dobras. Se $P_1$ possui exatamente uma dobra, segue do Lema~\ref{lemma:Lwit} que $P_3$ possui três dobras. Em qualquer situação, uma contradição surge, implicando que $H({\cal F}) \leq 3$.
 \qed
 
 \begin{lema}\label{claim:upper-B2}
@@ -276,10 +276,10 @@ $H(B_2$-EPG$) \leq 4.$
 \end{lema}
 
 \proof
-Assume by contradiction that the número de Helly of  $B_2$-EPG families of caminhos is $h > 4$. In this case, consider a minimal não-$(h-1)$-Helly família $\cal F$ of $B_2$-EPG caminhos. The família  $\cal F$ must contain at least $h \geq 5$ distinct caminhos, each of them corresponding to a distinct não-representativo  edge. Choose arbitrarily 5 of these não-representativo edges.
+Assuma por contradição que o  número de Helly de famílias de caminhos  $B_2$-EPG é $h > 4$. Nesse caso, considere uma família minimal não-$(h-1)$-Helly  $\cal F$ de caminhos $B_2$-EPG. A família  $\cal F$ deve conter no mínimo $h \geq 5$ caminhos distintos, cada um deles correspondendo a uma aresta distinta  não-representativa. Selecione arbitrariamente 5 dessas arestas não-representativas.
 
-By Lemmas ~\ref{lemma:3colin} and ~\ref{lemma:3par} any three of these chosen edges can  neither be co-linear nor parallel. Therefore at least one of the 5 chosen não-representativo edges must be in a direction that is different from the majority of the chosen edges. Call the direction of this edge vertical, and the direction of the majority of the chosen edges horizontal. Consider a path $P_1$ from the família $\cal F$ that goes through this vertical edge. 
-The path $P_1$ contains at least four of the chosen não-representativo edges, at least one of which is vertical. Since $P_1$ has at most 2 dobras then it must have at most three segments. Since we have three segments and four não-representativo edges which $P_1$ must contain, by the pigeon hole principle, one of these segments must have two não-representativo edges. If this pair of edges are in a horizontal segment of $P_1$, then such  pair of edges, along with the vertical edge are in two consecutive path segments, forming a $B_1$-subpath in $\cal F$. Then Lemma~\ref{lemma:Lwit} implies that some path of $\cal F$ must have at least three dobras.   Otherwise, the two edges are vertical. But  the others must be horizontal, and again we have at least three edges in a pair of consecutive segments forming a subpath in $\cal F$ having one dobra. Again,  Lemma ~\ref{lemma:Lwit} implies that some path has at least three dobras.
+Pelos Lemas~\ref{lemma:3colin} e ~\ref{lemma:3par} quaisquer dessas três arestas escolhidas não podem ser  co-lineares nem paralelas. Por consequência, no mínimo uma das 5 arestas não-representativas escolhidas deve estar em uma direção que é diferente da direção da maioria das outras arestas escolhidas. Chamemos a direção dessa aresta de vertical, e a direção da maioria das outras arestas de horizontal. Considere um caminho $P_1$ da família $\cal F$ que passa por essa aresta vertical. 
+O caminho $P_1$ contem no mínimo quatro das arestas   não-representativas escolhidas, e no mínimo uma delas é vertical. Uma vez que $P_1$ possui no máximo duas dobras então ele deve ter no máximo três segmentos. Uma vez que temos três segmentos e quatro arestas não-representativas que $P_1$ deve conter, pelo princípio da casa dos pombos, um desses segmentos deve ter duas arestas não-representativas. Se esse par de arestas está em um segmento horizontal de $P_1$, então esse par de arestas, juntamente com a aresta vertical estão em dois segmentos consecutivos desse caminho, formando um $B_1$-subcaminho em $\cal F$. Então o Lema~\ref{lemma:Lwit} implica que algum caminho de $\cal F$ deve possuir no mínimo três dobras.  Caso contrário, as duas arestas seriam verticais. Mas as outras devem estar na  horizontal, e novamente temos no mínimo três arestas em um par de segmentos consecutivos formando um subcaminho em  $\cal F$ tendo uma dobra. Novamente, o  Lema ~\ref{lemma:Lwit} implica que algum caminho deve possuir no mínimo três dobras.
 \qed
 
 \begin{lema}\label{claim:upper-B3}
@@ -287,100 +287,100 @@ $H(B_3$-EPG$) \leq 8.$
 \end{lema}
 
 \proof
-Assume by contradiction that the Helly  number of  $B_3$-EPG caminhos is $h > 8$. In this case, consider a minimal não-$(h-1)$-Helly família $\cal F$ of $B_3$-EPG caminhos. Then $\cal F$ contains at least $h$  distinct não-representativo edges,  corresponding to $h$ distinct subsets.  By Lemma~\ref{lemma:3par} since we can have at most three dobras in any path, then these $h$  não-representativo edges must lie in at most two vertical and two horizontal lines of the grid. Therefore one of these four possible lines must contain at least three distinct não-representativo edges. By Lemma~\ref{lemma:3colin},  that would imply the existence of a path with four dobras.\qed
+Assuma por contradição que o número de Helly de caminhos  $B_3$-EPG é $h > 8$. Nesse caso, considere uma família minimal não-$(h-1)$-Helly $\cal F$ de caminhos $B_3$-EPG. Então $\cal F$ contem no mínimo $h$  arestas não-representativas distintas,  correspondendo a  $h$ subconjuntos distintos. Pelo Lema~\ref{lemma:3par} já que podemos ter no máximo três dobras em qualquer caminho, então essas $h$ arestas  não-representativas devem encontrar-se em no máximo duas linhas vertical e horizontal da grade. Por esse motivo uma dessas quatro linhas possíveis deve conter pelo menos três arestas não-representativas distintas. Pelo  Lema~\ref{lemma:3colin},  isso implica na existência de um caminho com quatro dobras.\qed
 
-This completes the proof of Theorem \ref{thm:Helly-EPG}. 
+Isso completa a prova do Teorema~\ref{thm:Helly-EPG}. 
 
 
 \section{Número de Helly of $B_k$-VPG Graphs}\label{sec:helly-vpg}
 
-In this section, we determine the número de Helly of $B_k$-VPG graphs. We prove the following results.
+Nessa seção determinaremos o número de Helly de grafos $B_k$-VPG. Para isso, provamos os seguintes resultados.
 \begin{theorem}\label{thm:Bk-VPG}
-The número de Hellys for $B_k$-VPG graphs satisfy:
+O número de Helly para grafos $B_k$-VPG satisfaz:
 \begin{enumerate}
 \item $H(B_1$-VPG) = 4
 \item $H(B_2$-VPG) = 6
 \item $H(B_3$-VPG) = 12
-\item $H(B_4$-VPG) is unbounded.
+\item $H(B_4$-VPG) é ilimitado.
 \end{enumerate}
 \end{theorem}
 
-Again, we prove the theorem by showing tight lower and upper bounds.
+Novamente, a demonstração do teorema é efetuada pela apresentação de limites superiores e inferiores justos.
 
-\subsection{Lower Bounds}
+\subsection{Limites Inferiores}
 
-First, we describe lower bounds.
+Primeiro, apresentamos um conjunto de instâncias com caminhos que possuem no máximo $k$ dobras para delimitar um limite inferior para cada $k=1,2,3$.
 
-Figure \ref{VPG:lower-B1} shows a set of 4 $B_1$-caminhos of a graph $G$, in a $2 \times 2$ grid, such that each path covers 3  vertices of $G$, and avoids exactly one of the  vertices. 
+A Figura~\ref{VPG:lower-B1} ilustra um conjunto de  quatro $B_1$-caminhos de um grafo $G$, em uma grade $2 \times 2$, tal que cada caminho cobre exatamente três vértices de  $G$, e evita exatamente um  dos  vértices. 
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=3cm]{./img/lower-bound-B1-VPG.pdf}
-    \caption{Lower bound for $B_1$-VPG graphs}
+    \caption{Limite inferior para grafos $B_1$-VPG.}
     \label{VPG:lower-B1}
 \end{figure}
 
-Figure \ref{VPG:lower-B2} shows a set of 6 $B_2$-caminhos of a graph $G$, in a $2 \times 3$ grid, such that each path covers 5  vertices of $G$, and avoids exactly one. 
+A Figura~\ref{VPG:lower-B2} ilustra um conjunto de seis $B_2$-caminhos de um grafo $G$, em uma grade  $2 \times 3$, tal que cada caminho cobre cinco vértices de $G$, e evita exatamente um.
 
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=8cm]{./img/lower-bound-B2-VPG.pdf}
-    \caption{Lower bound for $B_2$-$VPG$ graphs}
+    \caption{Limite inferior para grafos $B_2$-$VPG$.}
     \label{VPG:lower-B2}
 \end{figure}
 
 
-Figure \ref{VPG:lower-B3} shows 12 $B_3$-caminhos of a graph $G$, in a grid, of perimeter 12, such that each path covers 11  vertices of $G$,  avoiding one of them. 
+A Figura~\ref{VPG:lower-B3} ilustra um conjunto de doze $B_3$-caminhos de um grafo $G$, em uma grade, de perímetro 12, tal que cada caminho cobre  onze vértices de $G$, evitando um deles.
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{./img/lower-bound-B3-VPG.pdf}
-    \caption{Lower bound for $B_3$-VPG graphs}
+    \caption{Limite inferior para grafos $B_3$-VPG.}
     \label{VPG:lower-B3}
 \end{figure}
 
-Figure \ref{VPG:lower-B4} shows a set of $n$ $B_4$-caminhos of a $n$-vertex graph $G$, in a grid having perimeter $n$,  such that each path covers $n-1$  vertices of $G$, avoiding one of them. 
+A Figura~\ref{VPG:lower-B4} ilustra um conjunto de $n$ $B_4$-caminhos de um grafo $G$ com $n$-vértices, em uma grade que possui perímetro $n$,  tal que cada caminho cobre exatamente   $n-1$  vértices do perímetro da grade, e evitando um deles. 
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{./img/lower-bound-B4-VPG.pdf}
-    \caption{Lower bound for $B_4$-VPG graphs}
+    \caption{Limite inferior para grafos $B_4$-VPG.}
     \label{VPG:lower-B4}
 \end{figure}
 
-Applying Theorem \ref{thm:minimal}, we can then conclude that the number of vertices of each of the above described graphs are lower bounds for the corresponding class. Then, we can claim the following bounds.
+Aplicando o Teorema~\ref{thm:minimal}, podemos então concluir que o número de vértices de cada um dos grafos descritos anteriormente são limites inferiores para as classes correspondentes. Então, podemos estabelecer os seguintes limites.
 
 \begin{lema}\label{claim:VPG-lower}
-The following are lower bounds for $H(B_k$-VPG) graphs.
+Os seguintes são limites inferiores para $H(B_k$-VPG).
 \begin{enumerate}
 \item $H(B_1$-VPG) $\geq 4$
 \item $H(B_2$-VPG) $\geq 6$
 \item $H(B_3$-VPG) $\geq 12$
-\item $H(B_4$-VPG) is unbounded.
+\item $H(B_4$-VPG) é ilimitado.
 \end{enumerate}
 \end{lema}
 
-\subsection{Upper Bounds}
+\subsection{Limites Superiores}
 
-Next, we provide upper bounds for the número de Helly of $B_k$-VPG graphs. The following lemmas are employed.
+A seguir, provamos limites superiores para o número de Helly de grafos $B_k$-VPG. Os seguintes lemas são empregados.
 
 \begin{lemma}\label{column-sizes}
-Let $\cal F$ be a minimal não-$(h-1)$-Helly família of caminhos, for some $h$, containing $k \in \{3,4,5\}$ distinct co-linear não-representativo points of the grid. Then $\cal F$ contains a path having at least $k-1$ dobras.
+Seja $\cal F$ uma família minimal não-$(h-1)$-Helly de caminhos, para algum $h$, contendo $k \in \{3,4,5\}$ distintos pontos co-lineares não-representativos da grade. Então $\cal F$ contem um caminho com pelo menos $k-1$ dobras.
 \end{lemma}
 
-\proof For $k \in \{3,5\}$, the path avoiding the middle point has at least $k-1$ dobras; while for $k = 4$ the path avoiding one of the middle points also has this same property.
+\proof Para $k \in \{3,5\}$, o caminho que evita o ponto do meio possui pelo menos $k-1$ dobras; enquanto para $k = 4$ o caminho evitando um dos pontos do meio também possui essa mesma propriedade.
 \qed
 
 \begin{lemma}\label{column-number}
-Let $\cal F$ be a minimal não-$(h-1)$-Helly família of caminhos, on a grid containing $k < h$ distinct pairwise não-co-linear não-representativo points. Then $\cal F$ must contain a path with at least $k-1$ dobras.
+Seja $\cal F$ uma família minimal não-$(h-1)$-Helly de caminhos, sobre uma grade contendo $k < h$ pontos distintos mutuamente não-co-lineares não-representativos. Então $\cal F$ deve conter um caminho com no mínimo $k-1$ dobras.
 \end{lemma}   
 
-\proof Since $k < h$, $\cal F$ must contain a path that visits all such $k$ pairwise não-co-linear points. Such a path requires at least one dobra, between two consecutive não-co-linear points. Therefore $\cal F$ contains a path with at least $k-1$ dobras. \qed \\
+\proof Uma vez que $k < h$, $\cal F$ deve conter um caminho que visite todos esses $k$ pontos mutuamente não-co-lineares. Esse caminho exige pelo menos uma dobra, entre dois pontos consecutivos não-co-lineares. Portanto $\cal F$ contem um caminho com pelo menos $k-1$ dobras. \qed \\
 
 We also employ some additional concepts and notation, below described.
 
-Let $\cal F$ be a minimal não-$(h-1)$-Helly família of $B_{k-1}$-caminhos on a grid $Q$. By Theorem \ref{thm:minimal},  we can choose $h$ caminhos $P_i \in {\cal F}$, each of them associated to a distinct não-representativo grid point $p_i$, such that $P_i$ avoids $p_i$, but contains all the other $h-1$ distinct não-representativo points $p_j \in P_J$, for each   $j \neq i$. Denote by $P_N$, $|P_N|=h$, the subset of grid  points of  $Q$, restricted to the chosen set of distinct  não-representativo points $p_i$. By Lemmas \ref{column-sizes} and \ref{column-number}, the grid points of $P_N$ are contained in at most $k$ columns (lines), and each column (line) contains at most $k$ points of $P_N$. Consequently, the cardinalities of the points of $P_N$, contained in the columns (lines) of $Q$,  form a partition of the integer $h$, into at most $k$ parts, such that each part is at most $k$. Call such a partition as a {\it feasible  partition  of $h$, relative to $P_N$}. Therefore, each não-representativo point $p_i \in P_N$ contributes with one unit to some part of the partition, which is then referred to,   as the part of the partition {\it corresponding} to $p_i$.    
+Let $\cal F$ be a minimal não-$(h-1)$-Helly família of $B_{k-1}$-caminhos on a grid $Q$. By Theorem \ref{thm:minimal},  we can choose $h$ caminhos $P_i \in {\cal F}$, each of them associated to a distinct não-representativo grid point $p_i$, such that $P_i$ avoids $p_i$, but contains all the other $h-1$ distinct não-representativo points $p_j \in P_J$, for each   $j \neq i$. Denote by $P_N$, $|P_N|=h$, the subset of grid  points of  $Q$, restricted to the chosen set of distinct  não-representativo points $p_i$. By Lemas \ref{column-sizes} and \ref{column-number}, the grid points of $P_N$ are contained in at most $k$ columns (lines), and each column (line) contains at most $k$ points of $P_N$. Consequently, the cardinalities of the points of $P_N$, contained in the columns (lines) of $Q$,  form a partition of the integer $h$, into at most $k$ parts, such that each part is at most $k$. Call such a partition as a {\it feasible  partition  of $h$, relative to $P_N$}. Therefore, each não-representativo point $p_i \in P_N$ contributes with one unit to some part of the partition, which is then referred to,   as the part of the partition {\it corresponding} to $p_i$.    
 
 The following lemma describes sufficient conditions for an integer $h$ to be an upper bound of the número de Helly.
 
@@ -390,28 +390,28 @@ The following lemma describes sufficient conditions for an integer $h$ to be an 
     \item[(ii)] for any possible feasible partition, and for any arrangement of the grid points of $P_N$ in $Q$, there is some não-representativo point $p_i \in P_N$, such that  no path exists  in $Q$, having at most $k$ dobras, containing all points of $P_N$, except $p_i$.    
 \end{itemize}
 \end{lemma}
-{\it Proof}: The proof of (i) follows from Lemmas \ref{column-sizes} and \ref{column-number}, while the proof of (ii) is a consequence of Theorem \ref{thm:minimal}.  \qed \\
+{\it Proof}: The proof of (i) follows from Lemas \ref{column-sizes} and \ref{column-number}, while the proof of (ii) is a consequence of Theorem \ref{thm:minimal}.  \qed \\
 
-The following are upper bounds for the número de Helly of $B_k$-VPG graphs, for each $k$, $1 \leq k \leq 3$, obtained  by applying Lemma \ref{upper-bound}.      
+The following are upper bounds for the número de Helly of $B_k$-VPG graphs, for each $k$, $1 \leq k \leq 3$, obtained  by applying Lema \ref{upper-bound}.      
  
 \begin{lema}\label{claim:upper-B1-VPG}
 $H(B_1$-VPG) $\leq  4$.
 \end{lema}
 
-\proof There is no partition of the integer 5, into 2 parts, in which each part is at most 2. Consequently, the result follows from Lemma \ref{upper-bound} (i). \qed
+\proof There is no partition of the integer 5, into 2 parts, in which each part is at most 2. Consequently, the result follows from Lema \ref{upper-bound} (i). \qed
 
 \begin{lema}\label{claim:upper-B2-VPG}
 $H(B_2$-VPG)  $\leq  6$.
 \end{lema}
 
-\proof Assume the contrary. Then $H(B_2$-VPG) $\geq  7$, let $\cal F$ be a minimal não-6-Helly família of $B_2$-caminhos, and  $P_N$ be the set of não-representativo points of $\cal F$ in $Q$. There are two possible partitions of the integer 7, in three parts, each of them of size at most 3, namely $(3,3,1)$ and $(3,2,2)$. In any of these cases,  it is always possible to choose some point  $p_i \in P_N$, belonging  to a part of the partition of size 3, such that a path in $\cal F$  which  avoids $p_i$ and covers the other 6 não-representativo points, must contain at least 3 dobras.  Then by Lemma \ref{upper-bound}, indeed $H(B_2$-VPG)  $\leq  6$. \qed
+\proof Assume the contrary. Then $H(B_2$-VPG) $\geq  7$, let $\cal F$ be a minimal não-6-Helly família of $B_2$-caminhos, and  $P_N$ be the set of não-representativo points of $\cal F$ in $Q$. There are two possible partitions of the integer 7, in three parts, each of them of size at most 3, namely $(3,3,1)$ and $(3,2,2)$. In any of these cases,  it is always possible to choose some point  $p_i \in P_N$, belonging  to a part of the partition of size 3, such that a path in $\cal F$  which  avoids $p_i$ and covers the other 6 não-representativo points, must contain at least 3 dobras.  Then by Lema \ref{upper-bound}, indeed $H(B_2$-VPG)  $\leq  6$. \qed
 
 
 \begin{lema}\label{claim:upper-B3-VPG}
 $H(B_3$-VPG) $\leq  12$.
 \end{lema}
 
-\proof Assume the contrary, $H(B_3$-VPG) $\geq  12$. Let $\cal F$ be a minimal não-12-Helly família of $B_3$-caminhos, and  $P_N$ be the set of não-representativo points of $\cal F$ in $Q$. There are three possible partitions of the integer 13, into four parts, each of them of size at most 4, namely $(4,4,4,1)$, $(4,4,3,2)$ and $(4,3,3,3)$. In this case, choose $p_i \in P_N$ to be a não-representativo point, corresponding to a part of size $4$ of the partition.  The path of ${\cal F}$, which avoids $p_i$ must cover the other 12 não-representativo points. These points are located in 4 distinct columns, of cardinalites 4,4,3,1, 4,3,3,2, or 3,3,3,3, considering the 3 possible partitions, respectively. Such a path must contain at least 4 dobras, a contradiction. Then by Lemma \ref{upper-bound}, $H(B_3$-VPG) $\leq  12$.    \qed  
+\proof Assume the contrary, $H(B_3$-VPG) $\geq  12$. Let $\cal F$ be a minimal não-12-Helly família of $B_3$-caminhos, and  $P_N$ be the set of não-representativo points of $\cal F$ in $Q$. There are three possible partitions of the integer 13, into four parts, each of them of size at most 4, namely $(4,4,4,1)$, $(4,4,3,2)$ and $(4,3,3,3)$. In this case, choose $p_i \in P_N$ to be a não-representativo point, corresponding to a part of size $4$ of the partition.  The path of ${\cal F}$, which avoids $p_i$ must cover the other 12 não-representativo points. These points are located in 4 distinct columns, of cardinalites 4,4,3,1, 4,3,3,2, or 3,3,3,3, considering the 3 possible partitions, respectively. Such a path must contain at least 4 dobras, a contradiction. Then by Lema \ref{upper-bound}, $H(B_3$-VPG) $\leq  12$.    \qed  
 
 From the lower and upper bounds described in the previous subsections, we obtain the results for the número de Hellys of $B_k$-VPG graphs, completing the proof of Theorem \ref{thm:Bk-VPG}.
 
